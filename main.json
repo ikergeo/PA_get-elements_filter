@@ -1,18 +1,23 @@
+// Definición de los parámetros de entrada de la operación GetItems
 {
     "inputs": {
+        // Se especifica la conexión a SharePoint Online que se utilizará para la operación
         "host": {
-            "connectionName": "shared_sharepointonline_3",
-            "operationId": "GetItems",
-            "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+            "connectionName": "shared_sharepointonline", // Nombre de la conexión a SharePoint Online
+            "operationId": "GetItems", // Identificador de la operación que se va a realizar
+            "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline" // API de SharePoint Online que se utilizará para la operación
         },
+        // Se especifican los parámetros necesarios para la operación GetItems
         "parameters": {
-            "dataset": "https://MISITE.sharepoint.com/",
-            "table": "505932ee-21cf-4794-8eb6-4dbfe137dc12",
-            "$filter": "Activa eq 'Si'"
+            "dataset": "https://MISITE.sharepoint.com/", // URL del sitio de SharePoint Online donde se encuentra la lista
+            "table": "5*59***e-2**f-47*4-8*b6-4dbf**37dc*2", // Identificador único de la lista
+            "$filter": "Activa eq 'Si'" // Filtro que se aplicará a los elementos de la lista para obtener solo aquellos que tengan la propiedad Activa igual a 'Si'. El nombre se obtiene desde configuracion de la lista, seleccionando el campo y obteniendo el campo desde la URL
         },
+        // Se especifica la autenticación que se utilizará para acceder a SharePoint Online
         "authentication": "@parameters('$authentication')"
     },
+    // Metadatos adicionales de la operación
     "metadata": {
-        "operationMetadataId": "8f5**37c-****-4e*5-9*ed-dc4e0*******"
+        "operationMetadataId": "8f5**37c-****-4e*5-9*ed-dc4e0*******" // Identificador único de los metadatos de la operación
     }
 }
