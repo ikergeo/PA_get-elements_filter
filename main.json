@@ -1,0 +1,18 @@
+{
+    "inputs": {
+        "host": {
+            "connectionName": "shared_sharepointonline_3",
+            "operationId": "GetItems",
+            "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+        },
+        "parameters": {
+            "dataset": "https://MISITE.sharepoint.com/",
+            "table": "505932ee-21cf-4794-8eb6-4dbfe137dc12",
+            "$filter": "Activa eq 'Si'"
+        },
+        "authentication": "@parameters('$authentication')"
+    },
+    "metadata": {
+        "operationMetadataId": "8f5**37c-****-4e*5-9*ed-dc4e0*******"
+    }
+}
