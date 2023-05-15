@@ -1,3 +1,5 @@
+ Mejorar el rendimiento Power Automate filtrando elementos de las listas de SharePoint
+
 La función "Consulta de filtro" en Power Automate se utiliza para filtrar y obtener un subconjunto de datos de una lista o biblioteca de SharePoint. Esto es especialmente útil cuando se trabaja con listas que contienen miles de registros, ya que puede tardar mucho tiempo en recorrerlos todos.
 
 Al filtrar los registros por un campo específico de la lista de SharePoint, se puede acortar significativamente el tiempo de ejecución y evitar la congestión de la red.
